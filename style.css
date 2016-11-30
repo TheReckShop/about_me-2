@@ -1,0 +1,12 @@
+* {
+  border: 2px dashed black;
+  outline-color: red;
+}
+
+.class {
+  text-align: center;
+}
+
+#h2 {
+  color: purple
+}
