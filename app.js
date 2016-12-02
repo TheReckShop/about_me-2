@@ -1,57 +1,74 @@
 'use strict';
 
-var question1 = prompt('Is Shiv a L33T Haxsor').toLowerCase();
+var counter = 0;
 
-if (question1 === 'yes' || question1 === 'y') {
-  alert('HELL YEAH BABY, YOU HAVE TO ASSIMILATE THE MINDSET AND THEN THE CHARACTER FALLS INTO PLACE.');
-} else if (question1 === 'no' || question1 === 'n') {
-  alert('Well, that is true. Not yet at least. Given the determination who knows is possible?');
+var question1 = prompt('Do you think that I have a black belt (Please answer Yes/Y or No/N)');
+if (question1 === 'Yes' || 'Y') {
+  console.log('Yup! ');
+  counter += 1;
 } else {
-  alert('If you could please answer Yes/Y or No/N.');
+  console.log('');
 }
-console.log('Trying to motivate myself to get that dank software engineering level.')
 
-var question2 = prompt('Does Shiv Daddy chill with the powder puff girls?');
-var grandpaVoice = '...Back in my day';
-
-if (question2 === 'yes' || question2 === 'y') {
-  alert('I got that Mojo Jojo baby');
-} else if (question2 === 'no' || question2 === 'n') {
-  alert('Not anymore, but I remember (*Grandpa Voice*)' + grandpaVoice.italics());
+var question2 = prompt('Do you thinkt that I can become a professional coder? (Please answer Yes/Y or No/N)');
+if (question2 === 'Yes' || 'Y') {
+  console.log('Yay! I enjoy the faith :)');
+  counter += 1;
 } else {
-  alert('If you could please answer Yes/Y or No/N.');
+  console.log('Oh that\'s cold. Ice cold. I can\'t hear ya!!! I say I say I say, what\'s cooler than being cold? ICEEEEE COLD');
 }
-console.log('I used to watch the power puff girls back in the day.')
 
-var question3 = prompt('Was Shivvy Smalls the one that crawled on top of the empire state building?').toLowerCase();
-
-if (question3 === 'yes' || question3 === 'y') {
-  alert('Haha that was actually King Kong you Ding Dong!');
-} else if (question3 === 'no' || question3 === 'n') {
-  alert('Well obviously not you\'d have to be on drugs to think otherwise ;)');
+var question3 = prompt('Do you think that soccer is my favorite sport?(Please answer Yes/Y or No/N)');
+if (question3 === 'Yes' || 'Y') {
+  console.log('Lawl unfortunately not I struggle to kick a ball without tripping over it');
+  counter += 1;
 } else {
-  alert('If you could please answer Yes/Y or No/N.');
+  console.log('You would be correct! I\'m going with that ballislife vibe');
 }
-console.log('Was thinking about King Kong for some reason.')
 
-var question4 = prompt('Did Shivster manage to lose?').toLowerCase();
-
-if (question4 === 'yes' || question4 === 'y') {
-  alert('Well of course, because he didn\'t adequately prepare');
-} else if (question4 === 'no' || question4 === 'n') {
-  alert('That is incorrect. He fails constantly and continously. That is what breeds success.');
+var question4 = prompt('Do you think that I am over 6 foot 4?(Please answer Yes/Y or No/N)');
+if (question4 === 'Yes' || 'Y') {
+  console.log('Son. I\'d be living that millionaire life warming the benches in the NBA then');
+  counter += 1;
 } else {
-  alert('If you could please answer Yes/Y or No/N.');
+  console.log('True. Sad day :(');
 }
-console.log('Some motivational shit for myself.')
 
-var question5 = prompt('Will Shivzilla win?').toLowerCase();
-
-if (question5 === 'yes' || question5 === 'y') {
-  alert('There is no winning in this game. Only progression.');
-} else if (question5 === 'no' || question5 === 'n') {
-  alert('There is no winning in this game. Only progression.');
+var question5 = prompt('Do you think that I have any pets?(Please answer Yes/Y or No/N)');
+if (question5 === 'Yes' || 'Y') {
+  console.log('Sadly no. I definitely would love to have a little doggie in my life');
+  counter += 1;
 } else {
-  alert('If you could please answer Yes/Y or No/N.');
+  console.log('True. My strange awkwardness may exemplify that.');
 }
-console.log('Capitalism has bred a shallow definition of success. Our egos are too large with no true happiness to be found.')
+
+alert(counter);
+
+var guesses = 5;
+var idolsQuestion = prompt('Do you think you can list one of my idols? I have 5');
+var myIdols = ['Kobe Bryant', 'Conan O\'Brien', 'Bruce Lee', 'Louis CK', 'Jimmi Hendrix'];
+
+while (guesses > 0) {
+  for (var i; i < myIdols[i]; i--) {
+    if (idolsQuestion === myIdols[i]) {
+      console.log('Correct! Nice job!');
+      guesses -= 1;
+    } else {
+      console.log('Sorry! Good guess though!');
+      guesses -= 1;
+    }
+  }
+}
+
+var numberGuess = 4;
+var favoriteNumber = 1;
+var userNumber = prompt('Pick a number between 1 and 10');
+for (var j; j > 0; j--) {
+  if (userNumber === favoriteNumber) {
+    console.log('Good guess');
+    numberGuess -= 1;
+  } else {
+    console.log('Sorry man');
+    numberGuess -= 1;
+  }
+}
